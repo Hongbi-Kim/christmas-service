@@ -1,6 +1,6 @@
 import { Share2, RotateCcw, Home } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-
+import AdBanner from './AdBanner';
 interface ResultScreenProps {
   service: any;
   result: any;
@@ -110,6 +110,10 @@ export default function ResultScreen({ service, result, nickname, onBack }: Resu
               <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
+          {/* 결과 밑에 광고 */}
+          <div className="mt-8 flex justify-center">
+          <AdBanner slot="0987654321" className="w-full max-w-[728px]" />
+        </div>
         </div>
       </div>
     </div>
