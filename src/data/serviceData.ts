@@ -1,8 +1,8 @@
 export const serviceData: Record<string, any> = {
   fortune: {
-    title: '회사식 크리스마스 운세',
+    title: '직장인 연말 운세',
     description:
-      '올해 연말, 당신의 회사 생활은 어떨까요? 상사님의 기분부터 야근 운까지 모두 알려드립니다.',
+      '올해 연말, 당신의 회사 생활은 어떨까요? 상사의 기분부터 야근운까지 모두 알려드립니다.',
     emoji: '🎄',
     questions: [
       {
@@ -102,7 +102,7 @@ export const serviceData: Record<string, any> = {
         description:
           '연말 복이 당신을 찾아왔습니다!\n상사님의 미소, 동료들의 칭찬, 그리고 예상치 못한 성과급까지.\n올 연말은 당신의 시간입니다.\n\n다만 너무 바빠서 “어라, 벌써 연말이었네?” 하고 지나칠 수도...\n그래도 기쁜 바쁨입니다.\n\n이런 사람에게서 자주 나타납니다:\n• 괜히 불안해서 할 일 미리미리 해두는 타입\n• 상사 눈치보다 동료 눈치를 더 보는 타입',
         image:
-          'https://images.unsplash.com/photo-1592830416183-f96c99518a8a?auto=format&fit=crop&w=1200&q=80',
+          '/images/test1/fortune1.png',
         stats: [
           { label: '행운 지수', value: '⭐⭐⭐⭐⭐' },
           { label: '야근 확률', value: '30%' },
@@ -115,8 +115,8 @@ export const serviceData: Record<string, any> = {
         description:
           '특별한 일은 없지만 큰 탈도 없는 안정적인 연말입니다.\n조용히 업무를 마무리하고 연말 휴가를 준비하세요.\n\n상사님도 딱히 터치하지 않고, 회식도 적당히만 있는 타입.\n“이 정도면 괜찮지 뭐”라는 말이 자동으로 나옵니다.\n\n이런 사람에게서 자주 나타납니다:\n• 눈에 띄지도, 문제를 만들지도 않는 조용한 직장인\n• 칼퇴는 못하지만, 막차도 잘 안 타는 사람',
         image:
-          'https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune2.png',
+              stats: [
           { label: '행운 지수', value: '⭐⭐⭐' },
           { label: '야근 확률', value: '50%' },
         ],
@@ -128,7 +128,7 @@ export const serviceData: Record<string, any> = {
         description:
           '겉으로 보기엔 평범하지만, 뜻밖의 기쁨이 슬쩍 끼어드는 연말입니다.\n작은 칭찬, 동료의 감사 인사, 예상 못 한 반차 승인 같은 것들이 당신을 기다리고 있어요.\n\n다만, “나도 좀 쉬어야겠다”라는 말은 직접 해야 들립니다.\n\n이런 사람에게서 자주 나타납니다:\n• 늘 남 눈치 보느라 자기 일은 제일 나중인 사람\n• 월급날에만 잠깐 기분 좋아지는 타입',
         image:
-          'https://images.unsplash.com/photo-1607082348824-0c5df123de54?auto=format&fit=crop&w=1200&q=80',
+        '/images/test1/fortune3.png',
         stats: [
           { label: '행운 지수', value: '⭐⭐⭐⭐' },
           { label: '야근 확률', value: '40%' },
@@ -142,8 +142,8 @@ export const serviceData: Record<string, any> = {
         description:
           '연말까지 풀스퍼트가 필요한 운세입니다.\n프로젝트, 보고서, 회의가 줄줄이 대기 중이에요.\n\n잠깐 정신 차리면 크리스마스가 지났을 수 있지만,\n내년 인사고과에선 분명히 이름이 언급됩니다.\n\n이런 사람에게서 자주 나타납니다:\n• “이번만 불태우자”를 매 분기 말하는 사람\n• 야근하면서도 이상하게 텐션은 괜찮은 타입',
         image:
-          'https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune4.png',
+                stats: [
           { label: '행운 지수', value: '⭐⭐⭐' },
           { label: '야근 확률', value: '80%' },
         ],
@@ -151,12 +151,12 @@ export const serviceData: Record<string, any> = {
         worstMatch: '칼퇴가 인생 목표인 워라밸 최우선주의자',
       },
       {
-        title: '🧊 얼리 퀴트 모드',
+        title: '🧊 마음은 이미 휴가 중',
         description:
-          '연말이 오기도 전에 이미 마음은 연차에 가 있습니다.\n일단 올해는 “여기까지”라는 생각이 강하게 드는 시즌.\n\n크리스마스 즈음엔 슬슬 노트북 덮을 핑계를 찾게 됩니다.\n\n이런 사람에게서 자주 나타납니다:\n• 캘린더에 연차/반차부터 먼저 채우는 타입\n• 할 일보다 휴무일을 먼저 세어보는 사람',
+          '연말이 오기도 전에 이미 마음은 휴가를 보내고 있습니다.\n일단 올해는 “여기까지”라는 생각이 강하게 드는 시즌.\n\n크리스마스 즈음엔 슬슬 노트북 덮을 핑계를 찾게 됩니다.\n\n이런 사람에게서 자주 나타납니다:\n• 캘린더에 연차/반차부터 먼저 채우는 타입\n• 할 일보다 휴무일을 먼저 세어보는 사람',
         image:
-          'https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune5.png',
+                stats: [
           { label: '행운 지수', value: '⭐⭐⭐⭐' },
           { label: '야근 확률', value: '20%' },
         ],
@@ -168,8 +168,8 @@ export const serviceData: Record<string, any> = {
         description:
           '좋았다가 나빴다가, 한 주 안에 희로애락이 다 들어있는 연말입니다.\n성과도 나고 사고도 나는, 아주 알찬(?) 시즌.\n\n감정 기복이 심해질 수 있으니, 중간중간 숨 고르기가 필요해요.\n\n이런 사람에게서 자주 나타납니다:\n• “요즘 어때?”라는 말에 대답이 너무 긴 사람\n• 회사 단톡에서 이모티콘 사용량이 많은 타입',
         image:
-          'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune6.png',
+               stats: [
           { label: '행운 지수', value: '⭐⭐' },
           { label: '야근 확률', value: '65%' },
         ],
@@ -181,8 +181,8 @@ export const serviceData: Record<string, any> = {
         description:
           '눈에 띄지 않게, 무사히 한 해를 넘기는 것이 최우선인 모드입니다.\n연말에는 특히 “이슈 없음”이 최고의 목표.\n\n크리스마스에도 회사 생각은 잠깐 하고 말아요.\n\n이런 사람에게서 자주 나타납니다:\n• 회의에서 이름 한 번도 안 불리는 사람\n• 단체 사진에 있긴 한데 기억은 잘 안 나는 타입',
         image:
-          'https://images.unsplash.com/photo-1519458246479-6acae7536988?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune7.png',
+                stats: [
           { label: '행운 지수', value: '⭐⭐⭐' },
           { label: '야근 확률', value: '35%' },
         ],
@@ -194,8 +194,8 @@ export const serviceData: Record<string, any> = {
         description:
           '몸은 회사에 있지만, 마음은 이미 연말 휴가 일정표 위에 있습니다.\n\n할 일은 하는데, 설레는 건 오직 퇴근 후와 연말 약속뿐.\n\n이런 사람에게서 자주 나타납니다:\n• 탭은 엑셀보다 항공권/맛집 검색이 더 많이 열린 사람\n• “이쯤 되면 다 그렇지 뭐”가 입버릇인 타입',
         image:
-          'https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+        '/images/test1/fortune8.png',
+                stats: [
           { label: '행운 지수', value: '⭐⭐' },
           { label: '야근 확률', value: '55%' },
         ],
@@ -307,8 +307,8 @@ export const serviceData: Record<string, any> = {
         description:
           '축하합니다! 올해 최고의 선물인 두둑한 상여금을 받을 가능성이 매우 높습니다.\n\n올 한 해 열심히 버틴 당신에게 회사가 보내는 현금형 사랑.\n다만 통장에 들어왔다가 사라지는 속도는 상여금보다 빠를 수 있습니다.\n\n추가 선물:\n• 상사님의 특별한 칭찬\n• “한 턱 쏴야지?”라는 농담 세트',
         image:
-          'https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift1.png',
+           stats: [
           { label: '만족도', value: '100%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐⭐' },
         ],
@@ -320,7 +320,7 @@ export const serviceData: Record<string, any> = {
         description:
           '당신의 선물은 “꿀 같은 휴가”입니다!\n연말연시 장기 휴가 사용 승인과 함께 내년 추가 연차 2일.\n\n진짜 선물은 “맘 편히 쉴 수 있는 마음가짐”일 수도 있어요.\n\n추가 선물:\n• 복귀 첫 주 재택근무 3일\n• 하지만 메신저는 가끔 울릴 수 있음',
         image:
-          'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
+        '/images/test2/gift2.png',
         stats: [
           { label: '만족도', value: '95%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐' },
@@ -333,7 +333,7 @@ export const serviceData: Record<string, any> = {
         description:
           '당신의 선물은 “성장 기회”입니다.\n새로운 프로젝트 리더 기회, 교육비 지원, 멘토링 프로그램 참여권 등이 기다리고 있어요.\n\n연봉보다 이직용 포트폴리오가 더 탄탄해지는 타입.\n\n추가 선물:\n• 사내 추천서\n• 전문가 네트워킹 기회\n• 그만큼 바빠질 수 있는 리스크',
         image:
-          'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
+        '/images/test2/gift3.png',
         stats: [
           { label: '만족도', value: '90%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐' },
@@ -346,8 +346,8 @@ export const serviceData: Record<string, any> = {
         description:
           '달콤한 연말 사무실 라이프!\n케이크, 쿠키, 치킨, 탕비실 간식이 끊이지 않는 시즌이 찾아옵니다.\n\n일은 많은데, 먹을 것도 많아서 복잡한 기분이 될 수 있어요.\n\n추가 선물:\n• “살은 새해에 빼지 뭐” 자기합리화 쿠폰\n• 집에 가져갈 수 있는 간식 박스',
         image:
-          'https://images.unsplash.com/photo-1542326237-94b1c5a538d9?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift4.png',
+                  stats: [
           { label: '만족도', value: '88%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐' },
         ],
@@ -359,8 +359,8 @@ export const serviceData: Record<string, any> = {
         description:
           '당신에게는 “아무 말 없이 슬쩍 먼저 퇴근해도 용서되는 분위기”가 선물로 주어집니다.\n\n일찍 집에 가는 사람을 부러워만 보던 시절은 끝.\n이제는 당신이 단톡방에 “먼저 가보겠습니다”를 남길 차례입니다.\n\n추가 선물:\n• 금요일 4시 퇴근권 1회\n• 상사의 “오늘은 일찍 들어가요” 멘트 1회',
         image:
-          'https://images.unsplash.com/photo-1512427691650-1e0c2f9a81b3?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift5.png',
+                  stats: [
           { label: '만족도', value: '85%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐' },
         ],
@@ -372,8 +372,8 @@ export const serviceData: Record<string, any> = {
         description:
           '올해 당신을 위한 선물은 “멘탈 방어력 +100”입니다.\n\n상사의 말, 클라이언트의 말, 단톡방의 말에 쉽게 흔들리지 않는\n강력한 감정 보호막이 장착됩니다.\n\n추가 선물:\n• “괜찮아, 다 그런 거지 뭐” 자동 재생 기능\n• 퇴근 후 회사 생각 차단 모드',
         image:
-          'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift6.png',
+                  stats: [
           { label: '만족도', value: '80%' },
           { label: '행복 지수', value: '⭐⭐⭐' },
         ],
@@ -385,8 +385,8 @@ export const serviceData: Record<string, any> = {
         description:
           '올해 선물은 “밀린 일 한 번에 쓸어담기 패키지”입니다.\n\n기적처럼 집중력이 생겨서, 미뤄둔 업무와 정리를 한 번에 끝낼 수 있는 타이밍이 올 거예요.\n물론, 그 타이밍이 크리스마스 직전일 수도 있습니다.\n\n추가 선물:\n• 탕비실 청소, 메일함 정리 욕구 폭발\n• 정리하다가 야근할 위험',
         image:
-          'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift7.png',
+                  stats: [
           { label: '만족도', value: '75%' },
           { label: '행복 지수', value: '⭐⭐⭐' },
         ],
@@ -398,8 +398,8 @@ export const serviceData: Record<string, any> = {
         description:
           '당신에게 주어지는 선물은\n“별일 없이 무사히 한 해를 마감하는 퇴근길”입니다.\n\n드라마는 없지만, 사고도 없고, 큰 스트레스도 없는 연말.\n집으로 걸어가는 발걸음이 유난히 가볍게 느껴질 거예요.\n\n추가 선물:\n• 퇴근길 편의점 간식 1+1 발견 운\n• 왠지 모르게 잘 맞는 버스/지하철 타이밍',
         image:
-          'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
-        stats: [
+          '/images/test2/gift8.png',
+                  stats: [
           { label: '만족도', value: '82%' },
           { label: '행복 지수', value: '⭐⭐⭐⭐' },
         ],

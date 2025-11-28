@@ -1,4 +1,5 @@
 import { Sparkles, Gift, TrendingUp } from 'lucide-react';
+import Footer from './Footer';
 
 interface IntroScreenProps {
   onStart: () => void;
@@ -6,7 +7,8 @@ interface IntroScreenProps {
 
 export default function IntroScreen({ onStart }: IntroScreenProps) {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 sm:p-6">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6">
       <div className="text-center space-y-6 sm:space-y-8 max-w-2xl w-full">
         <div className="space-y-3 sm:space-y-4">
           <div className="flex justify-center gap-3 sm:gap-4">
@@ -34,6 +36,8 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
         >
           시작하기 ✨
         </button>
+        <Footer />
+      </div>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { Sparkles, Gift, Calculator } from 'lucide-react';
 import AdBanner from './AdBanner';
+import Footer from './Footer';
 interface HomeScreenProps {
   onSelectService: (serviceId: string) => void;
 }
@@ -33,11 +34,12 @@ const services = [
 
 export default function HomeScreen({ onSelectService }: HomeScreenProps) {
   return (
-    <div className="min-h-screen p-4 sm:p-6 md:p-8 lg:p-12">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-1 p-4 sm:p-6 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8 md:space-y-12">
         <div className="text-center space-y-2 sm:space-y-3">
           <h1 className="text-2xl sm:text-3xl md:text-4xl">직장인 연말 뽑기 🎄</h1>
-          <p className="text-sm sm:text-base text-gray-600">원하는 서비스를 선택해주세요</p>
+          <p className="text-sm sm:text-base text-gray-600">원하는 테스트를 선택해주세요. 테스트 별로 그려진 그림체가 달라요. 3가지 테스트 모두 즐겨봐요!</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
@@ -70,10 +72,12 @@ export default function HomeScreen({ onSelectService }: HomeScreenProps) {
             );
           })}
         </div>
+        <Footer />
         {/* 카드 그리드 밑에 광고 */}
         <div className="mt-8 flex justify-center">
           <AdBanner slot="1234567890" className="w-full max-w-[728px]" />
         </div>
+      </div>
       </div>
     </div>
   );
