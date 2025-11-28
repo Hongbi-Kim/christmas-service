@@ -1,3 +1,9 @@
+// import DevAllResults from './components/DevAllResults';
+
+// export default function App() {
+//   return <DevAllResults />;
+// }
+
 import { useState, useEffect } from 'react';
 import IntroScreen from './components/IntroScreen';
 import HomeScreen from './components/HomeScreen';

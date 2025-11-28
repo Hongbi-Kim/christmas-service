@@ -141,9 +141,9 @@ export default function ResultScreen({ serviceId, service, result, nickname, onB
                   key={index} 
                   className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4 sm:p-5 text-center border border-indigo-200/50 hover:shadow-md transition-shadow"
                 >
-                  <div className="flex justify-center mb-2">
+                  {/* <div className="flex justify-center mb-2">
                     <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-500" />
-                  </div>
+                  </div> */}
                   <div className="text-2xl sm:text-3xl text-indigo-700">{stat.value}</div>
                   <div className="text-xs sm:text-sm text-gray-600 mt-1">{stat.label}</div>
                 </div>
@@ -161,10 +161,10 @@ export default function ResultScreen({ serviceId, service, result, nickname, onB
               결과 공유하기
             </button>
             <button
-              onClick={handleRestart}
+              onClick={onBack}
               className="flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 border-2 border-gray-300 rounded-lg hover:bg-gray-50 transition-all active:scale-95 hover:border-gray-400"
             >
-              <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
+              <Home className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
 

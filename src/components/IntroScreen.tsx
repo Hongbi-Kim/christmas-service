@@ -17,17 +17,17 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
             <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-blue-500 animate-pulse" />
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl">
-            🎄 직장인 연말 뽑기
+            🎄 직장인을 위한 3종 테스트
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 px-4">
-            2024년을 마무리하는 특별한 3종 세트
+            크리스마스 시즌 한정 테스트
           </p>
         </div>
 
         <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600 px-4">
           <p>회사 생활의 끝판왕,</p>
-          <p>연말을 맞이하는 직장인을 위한</p>
-          <p>재미있는 운세와 예측을 만나보세요!</p>
+          <p>2025년을 마무리하는 맞이하는 직장인을 위한</p>
+          <p>재미있는 운세와 맞춤 선물을 확인해보세요!</p>
         </div>
 
         <button
