@@ -29,7 +29,7 @@ export default function Footer({ className = '' }: FooterProps) {
 
           {/* 오른쪽: Powered by Wave X */}
           <a
-            href="https://wavetoai.com"
+            href="https://www.instagram.com/thewave.x_?igsh=ejNia3IwanVxaHpw&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
