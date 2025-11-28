@@ -78,7 +78,7 @@ export default function ResultScreen({ serviceId, service, result, nickname, onB
           </div>
 
           {/* 이미지 */}
-          <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center shadow-md">
+          <div className="w-full max-w-sm mx-auto rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center shadow-md aspect-square">
             <ImageWithFallback
               src={result.image}
               alt={result.title}

@@ -71,14 +71,14 @@ export default function SharedResultScreen({ resultData, onBack, onTryService }:
             <h2 className="text-lg sm:text-xl md:text-2xl text-gray-800 px-2">{service.title}</h2>
           </div>
 
-          {/* 이미지 */}
-          <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center shadow-md">
+            {/* 이미지 */}
+            <div className="w-full max-w-sm mx-auto rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center shadow-md aspect-square">
             <ImageWithFallback
-              src={result.image}
-              alt={result.title}
-              className="w-full h-full object-cover"
+                src={result.image}
+                alt={result.title}
+                className="w-full h-full object-cover"
             />
-          </div>
+            </div>
 
           {/* 결과 타이틀 */}
           <div className="relative">
