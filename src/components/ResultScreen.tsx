@@ -4,6 +4,7 @@ import AdBanner from './AdBanner';
 import Footer from './Footer';
 
 interface ResultScreenProps {
+  serviceId: string;
   service: any;
   result: any;
   nickname: string;
@@ -11,37 +12,42 @@ interface ResultScreenProps {
   onRestart: () => void;
 }
 
-export default function ResultScreen({ service, result, nickname, onBack, onRestart }: ResultScreenProps) {
+export default function ResultScreen({ serviceId, service, result, nickname, onBack, onRestart }: ResultScreenProps) {
   const handleShare = async () => {
-    // 결과 정보를 URL에 인코딩
+    const resultIndex = service.results.findIndex(
+      (r: any) => r.title === result.title
+    );
+  
     const resultData = {
-      serviceId: service.id,
-      nickname: nickname,
-      resultIndex: service.results.findIndex((r: any) => r.title === result.title)
+      serviceId,          // 여기!
+      nickname,
+      resultIndex,
     };
-    
-    const encodedData = btoa(JSON.stringify(resultData));
+  
+    const encodedData = encodeURIComponent(JSON.stringify(resultData));
     const shareUrl = `${window.location.origin}${window.location.pathname}?result=${encodedData}`;
-    
+  
     const shareText = `${nickname}님의 ${service.title} 결과: ${result.title}`;
-    
-    if (navigator.share) {
-      try {
+  
+    try {
+      if (navigator.share) {
         await navigator.share({
           title: service.title,
           text: shareText,
           url: shareUrl,
         });
-      } catch (error) {
-        // 사용자가 공유를 취소한 경우
-        console.log('공유 취소됨');
+      } else if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+        alert('결과 링크가 클립보드에 복사되었습니다!');
+      } else {
+        // 최악의 경우
+        alert('이 브라우저에서는 공유 기능을 지원하지 않습니다.\n주소창의 링크를 직접 복사해 주세요.');
       }
-    } else {
-      // Web Share API를 지원하지 ��는 경우
-      navigator.clipboard.writeText(shareUrl);
-      alert('결과 링크가 클립보드에 복사되었습니다!');
+    } catch (e) {
+      console.error('공유 실패:', e);
     }
   };
+  
 
   const handleRestart = () => {
     onRestart();
