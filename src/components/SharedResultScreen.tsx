@@ -53,13 +53,13 @@ export default function SharedResultScreen({ resultData, onBack, onTryService }:
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8 lg:p-12 animate-in fade-in duration-500">
       <div className="max-w-2xl mx-auto space-y-4 sm:space-y-6">
-        <button
+        {/* <button
           onClick={onBack}
           className="flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 active:scale-95 transition-transform"
         >
           <Home className="w-4 h-4 sm:w-5 sm:h-5" />
           홈으로 돌아가기
-        </button>
+        </button> */}
 
         <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl space-y-5 sm:space-y-6">
           {/* 헤더 섹션 */}
@@ -151,7 +151,7 @@ export default function SharedResultScreen({ resultData, onBack, onTryService }:
               나도 {service.title} 해보기
             </p>
             <button
-              onClick={() => onTryService(resultData.serviceId)}
+              onClick={onBack}
               className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 sm:py-4 rounded-lg hover:shadow-lg transition-all active:scale-95 hover:from-blue-600 hover:to-purple-600"
             >
               <span className="text-sm sm:text-base">테스트 시작하기</span>
