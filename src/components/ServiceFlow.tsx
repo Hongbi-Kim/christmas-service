@@ -1,4 +1,5 @@
 // ServiceFlow.tsx
+import AdBanner from './AdBanner';
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ResultScreen from './ResultScreen';
@@ -204,6 +205,10 @@ export default function ServiceFlow({ serviceId, onBack }: ServiceFlowProps) {
           )}
         </div>
       </div>
+        {/* 광고 */}
+      {/* <div className="mt-8 flex justify-center">
+      <AdBanner slot="6167417121" className="w-full max-w-[728px]" />
+      </div> */}
       <Footer />
     </div>
   );

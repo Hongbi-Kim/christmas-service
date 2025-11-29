@@ -200,7 +200,7 @@ export default function ResultScreen({
 
             {/* 광고 */}
             <div className="mt-8 flex justify-center">
-              <AdBanner slot="0987654321" className="w-full max-w-[728px]" />
+              <AdBanner slot="6167417121" className="w-full max-w-[728px]" />
             </div>
           </div>
         </div>
