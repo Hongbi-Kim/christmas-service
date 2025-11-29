@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Share2, RotateCcw, Home, Heart, X, Sparkles, TrendingUp, Award } from 'lucide-react';
+import { send, RotateCcw, Home, Heart, X, Sparkles, TrendingUp, Award } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import AdBanner from './AdBanner';
 import Footer from './Footer';
@@ -187,7 +187,7 @@ export default function ResultScreen({
                 onClick={handleShare}
                 className="flex-1 flex items-center justify-center gap-1.5 sm:gap-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white py-3 sm:py-4 text-sm sm:text-base rounded-lg hover:shadow-lg transition-all active:scale-95 hover:from-green-600 hover:to-emerald-600"
               >
-                <Share2 className="w-4 h-4 sm:w-5 sm:h-5" />
+                <send className="w-4 h-4 sm:w-5 sm:h-5" />
                 결과 공유하기
               </button>
               <button
