@@ -25,7 +25,7 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
         </div>
 
         <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600 px-4">
-          <p>회사 생활의 끝판왕,</p>
+          {/* <p>회사 생활의 끝판왕,</p> */}
           <p>2025년을 마무리하는 맞이하는 직장인을 위한</p>
           <p>재미있는 운세와 맞춤 선물을 확인해보세요!</p>
         </div>

@@ -55,7 +55,14 @@ export default function HomeScreen({ onSelectService }: HomeScreenProps) {
             return (
               <button
                 key={service.id}
-                onClick={() => onSelectService(service.id)}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'start_test', {
+                      service: service.id, // 'fortune' | 'gift' | 'overtime'
+                    });
+                  }
+                  onSelectService(service.id);
+                }}
                 className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-lg hover:shadow-2xl transition-all hover:scale-105 active:scale-95 text-left space-y-3 sm:space-y-4 group"
               >
                 {/* 이미지 */}

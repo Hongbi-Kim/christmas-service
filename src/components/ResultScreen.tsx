@@ -17,7 +17,25 @@ export default function ResultScreen({ serviceId, service, result, nickname, onB
     const resultIndex = service.results.findIndex(
       (r: any) => r.title === result.title
     );
-  
+
+    // 1) 결과 화면에 도달했을 때 GA4 이벤트 전송
+    useEffect(() => {
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'result_view', {
+          service: serviceId,       // 'fortune' | 'gift' | 'overtime'
+          result_index: resultIndex,
+        });
+      }
+    }, [serviceId, resultIndex]);
+    
+      // GA4 이벤트 보내기
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'share_click', {
+        service: serviceId,     // 'fortune' | 'gift' | 'overtime'
+        result_title: result.title,
+        page_location: window.location.href,
+      });
+    }
     const resultData = {
       serviceId,          // 여기!
       nickname,
